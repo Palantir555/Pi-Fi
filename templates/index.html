@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Please, enter the SSID and password of the AP you want to connect to.</h1>
+    <!--<h2>(it will be converted to uppercase)</h2>-->
+    <form action="connect_to_ap.asp" method="POST">
+        <label for="ssid">SSID to connect to:</label>
+        <input type="text" name="ssid">
+        <br>
+        <label for="password">Password of the AP:</label>
+        <input type="text" name="password">
+        <br>
+        <label for="encryption">Encryption mode:</label>
+        <select name="encryption">
+          <option value="WPA2-PSK">WPA 2</option>
+          <option value="WPA-PSK">WPA</option>
+        </select>
+        <br>
+        <label for="channel">WiFi channel to operate on:</label>
+        <input type="text" name="channel">
+        <br>
+        <label for="boot_mode">Boot as client on reboot?</label>
+        <input type="checkbox" name="boot_mode" value="1">
+        <br>
+        <input type="submit" name="my-form" value="Send">
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "AP": {
+        "file": "/etc/hostapd/hostapd.conf", 
+        "ssid": "Peq", 
+        "driver": "nl80211", 
+        "wpa_key_mgmt": "WPA-PSK", 
+        "wpa_passphrase": "Sal", 
+        "country_code": "UK", 
+        "hw_mode": "g", 
+        "wpa": "2", 
+        "channel": "1"
+    }, 
+    "CLIENT": {
+        "psk": "Sal", 
+        "ssid": "Peq", 
+        "proto": "WPA2", 
+        "file": "/etc/wpa_supplicant/wpa_supplicant.conf",
+        "key_mgmt": "WPA2-PSK", 
+        "channel": "1"
+    }, 
+    "boot_mode": "CLIENT"
+}
