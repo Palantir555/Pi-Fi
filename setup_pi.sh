@@ -105,7 +105,7 @@ RCLOCAL=/etc/rc.local
 sed -i 's/exit 0//' $RCLOCAL
 #Careful with this git pull on boot! Remove the line if you don't want it.
 echo 'git pull https://github.com/Palantir555/Pi-Fi.git'        >> $RCLOCAL
-echo 'if python script.py; then'                                >> $RCLOCAL
+echo 'if python /home/pi/Pi-Fi/main.py; then'                   >> $RCLOCAL
 echo '    echo "- Starting client mode..."'                     >> $RCLOCAL
 echo '    ifup wlan0'                                           >> $RCLOCAL
 echo 'else'                                                     >> $RCLOCAL
