@@ -10,7 +10,7 @@ Required 2 different architectures:
 
     d. Need to use port 80, so we don't need to redirect traffic (tell the user: navigate to pi.local)
 
-    e. in rc.local, we need a if(gpioPinX is HIGH): run the "be an AP" script.
+    e. in rc.local, we need an if(gpioPinX is HIGH): run the "be an AP" script.
 
 2 - Connect to an existing wifi
 
