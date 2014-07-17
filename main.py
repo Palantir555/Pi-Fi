@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import sys
 import json
-#import RPi.GPIO as gpio
+import RPi.GPIO as gpio
 import subprocess
 from flask import Flask
 from flask import request
@@ -214,10 +214,6 @@ def my_form_post():
 ### main ###
 if __name__ == '__main__':
     # input from GPIO7
-    generate_client_file()
-    generate_ap_file()
-    print "Done!"
-    while(1): pass
     gpio_input_val = GPIO.input(7)
     if (gpio_input_val == GPIO.LOW) or (get_boot_mode == "CLIENT"):
         #If jumper not set AND "CLIENT" defined in config.json
