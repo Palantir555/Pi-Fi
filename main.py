@@ -60,7 +60,7 @@ def read_config_file():
         wpa_key_mgmt    = json_data["AP"]["wpa_key_mgmt"]
         return 1
     else:
-        sys.exit(0) #we are supposed to run as a client, so exit this script.
+        exit(0) #we are supposed to run as a client, so exit this script.
 
 def save_json_file():
     '''Save the modified json values to its original file.'''
